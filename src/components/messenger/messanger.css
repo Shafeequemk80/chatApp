@@ -1,0 +1,75 @@
+.messenger {
+  height: calc(100vh - 70px); /* Fixed the calc spacing */
+  display: flex;
+  /* Use row for a horizontal layout */
+}
+
+.chatMenu {
+  flex: 3.5;
+  background-color: #f5a623; /* Color for Menu */
+}
+
+.chatBox {
+  flex: 5.5;
+  background-image: url("https://w0.peakpx.com/wallpaper/538/546/HD-wallpaper-whatsapp-dark-mode-whatsapp.jpg");
+}
+.chatBoxBottom {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.chatMessageInput {
+  width: 80%;
+  height: 50px;
+  justify-content: space-between;
+  padding: 10px;
+}
+.chatBoxTop{
+  height: 100%;
+  overflow: scroll;
+  padding-right: 10px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; 
+}
+
+
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.chatBoxTop::-webkit-scrollbar {
+  display: none;
+}
+.chatOnline {
+  flex: 3;
+  background-color: #4a90e2; /* Color for Online section */
+}
+.chatBoxWrapper{
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   top: 30px;
+
+
+}
+.chatMenuWrapper,
+.chatBoxWrapper,
+.chatOnlineWrapper {
+  padding: 10px;
+  height: 100%;
+}
+
+.chatSubmitButton {
+  width: 70px;
+  height: 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+}
+
+.noConverstionText{
+  color: #fff;
+  position: absolute;
+  font-size: 50px;
+}

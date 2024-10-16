@@ -1,0 +1,12 @@
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: 600; /* Bold */
+}
+
+p {
+  font-weight: 400; /* Regular */
+}

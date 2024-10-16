@@ -1,0 +1,50 @@
+.message{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.messageTop{
+    display: flex;
+}
+.messageImg{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px
+}
+.messageText{
+    padding: 10px;
+    border-radius: 5px;
+    background-color:#1e2c34;
+    color:  white;
+    max-width: 300px;
+    
+}
+
+.messageBottom{
+    font-size: 12px;
+    
+    color: white;
+}
+
+.message.own{
+    align-items: flex-end;
+
+
+}
+
+.message.own{
+    align-items: flex-end;
+
+
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
