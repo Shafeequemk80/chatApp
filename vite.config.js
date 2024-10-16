@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:8800/api', // Your backend API URL
+        target: 'https://zumra-backend.onrender.com', // Your backend API URL
         changeOrigin: true, // Needed for virtual hosted sites
         rewrite: (path) => path.replace(/^\/api/, ''), // Remove `/api` from the path
       },

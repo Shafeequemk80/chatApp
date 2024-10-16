@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-
+import { backdropClasses } from '@mui/material';
+const baseUrl = import.meta.env.VITE_BASE_URL;
 function Conversation({ conversation, currentUser }) {
   const [user, setUser] = useState(null);
 
@@ -10,7 +11,7 @@ function Conversation({ conversation, currentUser }) {
     const friendId = conversation.members.find((m) => m !== currentUser._id);
     const getUser = async () => {
       try {
-        const res = await axios.get(`http://localhost:8800/api/users?userId=${friendId}`);
+        const res = await axios.get(`${baseUrl}/api/users?userId=${friendId}`);
         setUser(res.data);
       } catch (error) {
         console.log(error);
